@@ -14,6 +14,7 @@ Doubango is a full SIP stack, developed by some guys in France. We will use it f
   s.platform     = :ios, '6.0'
   s.ios.deployment_target = '6.0'
   s.requires_arc = false
+  s.header_mappings_dir = "doubango/include"
 
   s.preserve_paths = 'doubango'
 
@@ -23,6 +24,5 @@ Doubango is a full SIP stack, developed by some guys in France. We will use it f
     "LIBRARY_SEARCH_PATHS" => '"$(PODS_ROOT)/Doubango/doubango/build/doubango/Build/Products/Debug-iphonesos"'
   }
 
-  s.public_header_files = 'doubango/tiny*/include/**/*.h'
-  # s.frameworks = 'CoreAudio', ''
+  s.public_header_files = 'doubango/include/**/*.h'
 end
