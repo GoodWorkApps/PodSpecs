@@ -14,15 +14,16 @@ Doubango is a full SIP stack, developed by some guys in France. We will use it f
   s.platform     = :ios, '6.0'
   s.ios.deployment_target = '6.0'
   s.requires_arc = false
-  s.header_mappings_dir = "doubango/include"
+  s.ios.source_files = "doubango/include/**/*.h"
+  s.ios.header_mappings_dir = "doubango/include"
+  s.ios.public_header_files = "doubango/include/**/*.h"
 
-  s.preserve_paths = 'doubango'
+  s.ios.preserve_paths = "doubango/include/**/*.h", "doubango/build/doubango/Build/Products/Debug-iphoneos/*"
+  s.ios.vendored_libraries = "doubango/build/doubango/Build/Products/Debug-iphoneos/*.a"
+#  s.libraries    = "tinyDAV", "tinyDEMO", "tinyHTTP", "tinyIPSec", "tinyMEDIA", "tinyMSRP", "tinyNET", "tinyROHC", "tinyRTP", "tinySAK", "tinySDP", "tinySIGCOMP", "tinySIP", "tinySMS", "tinyXCAP"
 
-  s.libraries    = "tinyDAV", "tinyDEMO", "tinyHTTP", "tinyIPSec", "tinyMEDIA", "tinyMSRP", "tinyNET", "tinyROHC", "tinyRTP", "tinySAK", "tinySDP", "tinySIGCOMP", "tinySIP", "tinySMS", "tinyXCAP"
+#  s.xcconfig = {
+#    "LIBRARY_SEARCH_PATHS" => '"$(PODS_ROOT)/Doubango/doubango/build/doubango/Build/Products/Debug-iphoneos"'
+#  }
 
-  s.xcconfig = {
-    "LIBRARY_SEARCH_PATHS" => '"$(PODS_ROOT)/Doubango/doubango/build/doubango/Build/Products/Debug-iphonesos"'
-  }
-
-  s.public_header_files = 'doubango/include/**/*.h'
 end
