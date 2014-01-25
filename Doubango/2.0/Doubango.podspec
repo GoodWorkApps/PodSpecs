@@ -18,8 +18,8 @@ Doubango is a full SIP stack, developed by some guys in France. We will use it f
   s.ios.header_mappings_dir = "doubango/include"
   s.ios.public_header_files = "doubango/include/**/*.h"
 
-  s.ios.preserve_paths = "doubango/include/**/*.h", "doubango/build/doubango/Build/Products/Debug-iphoneos/*"
-  s.ios.vendored_libraries = "doubango/build/doubango/Build/Products/Debug-iphoneos/*.a"
+  s.ios.preserve_paths = "doubango/include/**/*.h", "doubango/build/doubango/Build/Products/Debug-iphoneos/*", "doubango/thirdparties/iphone/lib/armv7/*.a"
+  s.ios.vendored_libraries = "doubango/build/doubango/Build/Products/Debug-iphoneos/*.a", "doubango/thirdparties/iphone/lib/armv7/*.a"
 #  s.libraries    = "tinyDAV", "tinyDEMO", "tinyHTTP", "tinyIPSec", "tinyMEDIA", "tinyMSRP", "tinyNET", "tinyROHC", "tinyRTP", "tinySAK", "tinySDP", "tinySIGCOMP", "tinySIP", "tinySMS", "tinyXCAP"
 
 #  s.xcconfig = {
