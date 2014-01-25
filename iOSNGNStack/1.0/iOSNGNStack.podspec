@@ -23,6 +23,6 @@ This is iOS wrapper for Doubango, we will use it as good as we can.
   s.ios.exclude_files = 'Classes/osx'
   s.osx.exclude_files = 'Classes/ios'
   s.public_header_files = 'Classes/**/*.h'
-  s.frameworks = 'OpenGLES', 'QuartzCore', 'Foundation', 'CFNetworking', 'CoreAudio', 'AVFoundation', 'AudioToolbox', 'AddressBook', 'CoreGraphics', 'CoreVideo', 'CoreMedia', 'AddressBookUI', 'SystemConfiguration'
+  s.frameworks = 'OpenGLES', 'QuartzCore', 'Foundation', 'CFNetwork', 'CoreAudio', 'AVFoundation', 'AudioToolbox', 'AddressBook', 'CoreGraphics', 'CoreVideo', 'CoreMedia', 'AddressBookUI', 'SystemConfiguration'
   s.dependency 'Doubango', '~> 2.0'
 end
