@@ -9,7 +9,7 @@ Doubango is a full SIP stack, developed by some guys in France. We will use it f
   #s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license      = 'MIT'
   s.author       = { "Gena" => "g.evstratov@gmail.com" }
-  s.source       = { :git => "https://github.com/GoodWorkApps/Doubango.git", :tag => "#{s.version}" }
+  s.source       = { :git => "git@github.com:GoodWorkApps/Doubango.git", :tag => "#{s.version}" }
 
   s.platform     = :ios, '6.0'
   s.ios.deployment_target = '6.0'
