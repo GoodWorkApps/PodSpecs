@@ -8,7 +8,8 @@ This is iOS wrapper for Doubango, we will use it as good as we can.
   s.homepage     = "http://doubango.org"
   s.license      = 'MIT'
   s.author       = { "Gena" => "g.evstratov@gmail.com" }
-  s.source       = { :git => "https://21b5650b3bc17e44347aeb2fc66c642ceb056cc3@github.com/GoodWorkApps/iOSNgnStack.git", :tag => s.version.to_s }
+#  s.source       = { :git => "https://21b5650b3bc17e44347aeb2fc66c642ceb056cc3@github.com/GoodWorkApps/iOSNgnStack.git", :tag => s.version.to_s }
+  s.source       = { :git => "git@github.com:GoodWorkApps/iOSNgnStack.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '8.0'
   s.ios.deployment_target = '8.0'
@@ -23,6 +24,6 @@ This is iOS wrapper for Doubango, we will use it as good as we can.
   s.public_header_files = 'Classes/**/*.h'
   s.frameworks = 'OpenGLES', 'QuartzCore', 'Foundation', 'CFNetwork', 'CoreAudio', 'AVFoundation', 'AudioToolbox', 'AddressBook', 'CoreGraphics', 'CoreVideo', 'CoreMedia', 'AddressBookUI', 'SystemConfiguration'
 
-  s.dependency 'Doubango', '~> 2.0'
+  s.dependency 'Doubango', '~> 2.0.5'
   s.dependency 'TheAmazingAudioEngine'
 end
